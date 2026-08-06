@@ -1,0 +1,28 @@
+FC class distribution (event_type, 20ms) - N=261638 windows, 9022 episodes
+  no_fault         id= 0 n=234572 89.66%
+  flt_1phg_shc_AG  id= 1 n=  2295  0.88%
+  flt_1phg_shc_BG  id= 2 n=  2259  0.86%
+  flt_1phg_shc_CG  id= 3 n=  2283  0.87%
+  flt_2ph_shc_AB   id= 4 n=  2175  0.83%
+  flt_2ph_shc_AC   id= 5 n=  2316  0.89%
+  flt_2ph_shc_BC   id= 6 n=  2262  0.86%
+  flt_2phg_shc_ABG id= 7 n=  2175  0.83%
+  flt_2phg_shc_ACG id= 8 n=  2277  0.87%
+  flt_2phg_shc_BCG id= 9 n=  2205  0.84%
+  flt_3ph_shc_ABC  id=10 n=  6819  2.61%
+  no-fault fraction = 89.66%
+  imbalance (max/min class) = 107.8x
+
+test-set sizes FC 20ms (all windows) (5-fold GroupKFold) - N=261638
+  fold 1:  52345 windows /  1805 episodes
+  fold 2:  52345 windows /  1805 episodes
+  fold 3:  52316 windows /  1804 episodes
+  fold 4:  52316 windows /  1804 episodes
+  fold 5:  52316 windows /  1804 episodes
+
+test-set sizes FL 20ms (fault-only) (5-fold GroupKFold) - N=27066
+  fold 1:   5415 windows /  1805 episodes
+  fold 2:   5415 windows /  1805 episodes
+  fold 3:   5412 windows /  1804 episodes
+  fold 4:   5412 windows /  1804 episodes
+  fold 5:   5412 windows /  1804 episodes

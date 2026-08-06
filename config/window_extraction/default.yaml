@@ -1,0 +1,9 @@
+step_length_seconds: 0.005
+period_of_interest: 0.080
+window_length: 0.020
+windows_directory: "windows"
+windows_local_dir: ""
+# Fault localization / line identification (y_fault_location, y_fault_line) use only
+# windows that contain the fault inception, as the spatial signature lives in the
+# initial transient. No effect on fault classification (y_fault_present / event_type).
+fault_start_only: true

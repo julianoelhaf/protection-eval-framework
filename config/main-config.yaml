@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+  - ablation: default
+  - dataset: default
+  - training: default
+  - model: default
+  - window_extraction: default
+  - tracking: default
+  - data_sparsity: default
+  - tuning: null # optional, activated only via CLI
+
+batch_size: 500

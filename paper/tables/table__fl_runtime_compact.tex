@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{Compact runtime summary for fault localization under the reference assumptions. \ac{mae} [\%] is shown for context. Runtimes are measured on a 32-core SLURM node (lme222, OMP=32) and are machine-specific relative indicators, not end-to-end relay latencies.}
+\label{tab:fl_runtime_compact}
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Window} & \textbf{MAE} & \textbf{Train [s]} & \textbf{Infer. [$\mu$s]} & \textbf{Thr. [k/s]} \\
+\midrule
+\ac{mlp} & 20\,ms & \textbf{10.20} & 346.3 & \textbf{6.45} & 155.0 \\
+\ac{gb} & 20\,ms & 14.78 & 27.2 & 22.49 & 44.5 \\
+\midrule
+\ac{mlp} & 50\,ms & \textbf{9.92} & 2258.0 & \textbf{15.91} & 62.9 \\
+\ac{gb} & 50\,ms & 14.66 & 140.4 & 49.36 & 20.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

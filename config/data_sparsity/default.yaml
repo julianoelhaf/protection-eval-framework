@@ -1,0 +1,17 @@
+# Sensor-AVAILABILITY degradation (channels missing / dropping out).
+#
+# Scope: these axes are NOT part of the results reported in the standardized-framework
+# manuscript, which defers sensor-availability robustness to the companion study. The
+# measurement-FIDELITY axes it does report (additive noise, CT saturation, sync jitter)
+# are configured in config/perturbation/default.yaml.
+#
+# All options below are at their disabled sentinels: this is the baseline used for every
+# reported number.
+
+bus_failure_id: 0         # Set to 0 to disable bus failure simulation (no bus fails)
+current_loss: false       # Set to false to disable current loss (no current channels zeroed)
+downsampling_factor: 1    # Set to 1 to disable downsampling (no downsampling applied)
+phase_failure_id: "None"  # Set to "None" to disable phase failure simulation (no phase channels zeroed)
+relay_failure_ids: [0]    # Set to [0] to disable relay failure simulation (no relays fail)
+voltage_loss: false       # Set to false to disable voltage loss (no voltage channels zeroed)
+zeroing_duration_s: 0.0   # Set to 0.0 to disable block zeroing (no time segments zeroed)

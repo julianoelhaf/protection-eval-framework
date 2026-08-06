@@ -1,0 +1,8 @@
+=== event_type ridge_classifier W=0.020: macroF1 mean=0.0951 std=0.0027 per_fold=[0.0936, 0.0936, 0.1001, 0.0954, 0.0926] (2201s)
+=== event_type k_neighbors_classifier W=0.020: macroF1 mean=0.7986 std=0.0059 per_fold=[0.7962, 0.8033, 0.8015, 0.8039, 0.7882] (1816s)
+=== event_type hist_gradient_boosting_classifier W=0.020: macroF1 mean=0.7447 std=0.0171 per_fold=[0.7763, 0.7464, 0.7387, 0.7364, 0.7256] (697s)
+=== event_type mlp_classifier W=0.020: macroF1 mean=0.9908 std=0.0009 per_fold=[0.9917, 0.9916, 0.9893, 0.9901, 0.9911] (2667s)
+=== event_type ridge_classifier W=0.050: macroF1 mean=0.0886 std=0.0024 per_fold=[0.0904, 0.0897, 0.0911, 0.0872, 0.0847] (11774s)
+=== event_type k_neighbors_classifier W=0.050: macroF1 mean=0.8632 std=0.0027 per_fold=[0.8668, 0.8643, 0.8628, 0.8636, 0.8585] (2998s)
+=== event_type hist_gradient_boosting_classifier W=0.050: macroF1 mean=0.9818 std=0.0014 per_fold=[0.9811, 0.9803, 0.9808, 0.9838, 0.9831] (7748s)
+=== event_type mlp_classifier W=0.050: macroF1 mean=0.9901 std=0.0052 per_fold=[0.9923, 0.9923, 0.9796, 0.9935, 0.9927] (6544s)

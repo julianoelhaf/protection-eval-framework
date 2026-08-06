@@ -1,0 +1,33 @@
+FC no-fault false-positive / nuisance-trip rate (event_type, mlp_classifier, 20ms) - PROTECT-90
+  generated : 2026-07-18T14:46:12
+  slurm_job : 774836
+  git_commit: 40bc94599856e640ce06ec7a28bca41b91a6aedd
+  command   : python -m fcl_psp.models.run_model training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 window_extraction.windows_local_dir=/path/to/datasets/PROTECT-90/windows/PROTECT-90 tracking.mode=disabled hydra.run.dir=/path/to/scratch/fc_falsepos/job_774836/hydra hydra.job.chdir=true
+  oof_dump  : /path/to/scratch/fc_falsepos/job_774836/hydra/outputs/hv_double_line_90kv/event_type/mlp_classifier/window0.02s_step0.005s/ablation_full/run_20260718_144608/oof_predictions.parquet
+  N windows : 261638   folds: [1, 2, 3, 4, 5]   no_fault_id: 0
+
+  Distinct window statuses present (status : count):
+    clean          n= 117286
+    in_fault       n= 117286
+    fault_start    n=  27066
+    -> 'clean' (pre-fault) windows = 117286
+
+  Definitions:
+    naive FP rate   = mean(y_pred != 0 | y_true == 0)      [all no_fault-labeled windows; onset-only labeling folds pre-fault + in-fault together]
+    honest nuisance = mean(y_pred != 0 | status == 'clean') [genuine PRE-FAULT windows only]  <-- headline / defensible metric
+
+  Per-fold (5-fold GroupKFold):
+  fold 1:  naive_FP=   0.0362% (   17/ 46930)   nuisance_clean=   0.0128% (    3/ 23465)
+  fold 2:  naive_FP=   0.0170% (    8/ 46930)   nuisance_clean=   0.0000% (    0/ 23465)
+  fold 3:  naive_FP=   0.0000% (    0/ 46904)   nuisance_clean=   0.0000% (    0/ 23452)
+  fold 4:  naive_FP=   0.0192% (    9/ 46904)   nuisance_clean=   0.0000% (    0/ 23452)
+  fold 5:  naive_FP=   0.0064% (    3/ 46904)   nuisance_clean=   0.0000% (    0/ 23452)
+
+  Across-fold summary (N=5 folds):
+    naive FP rate   : mean=0.0158%  std=0.0139% (ddof=1) [ddof=0 std=0.0124%]
+    honest nuisance : mean=0.0026%  std=0.0057% (ddof=1) [ddof=0 std=0.0051%]
+
+  Pooled across all 5 folds (single numerator/denominator):
+    naive FP rate   : 0.0158%  (37/234572)
+    honest nuisance : 0.0026%  (3/117286)
+

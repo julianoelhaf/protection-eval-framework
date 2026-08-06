@@ -1,0 +1,19 @@
+\begin{table}[pos=t]
+\caption{Compact measurement-fidelity summary at 20\,ms for the focused sensitivity panel: clean value and worst-case level across the three degradation axes (additive noise, current-transformer saturation, synchronization jitter). Full per-level results in Appendix~\ref{app:fidelity} (Tables~\ref{tab:fidelity_fl} and~\ref{tab:fidelity_fc}).}
+\label{tab:fidelity_summary}
+\small
+\centering
+\begin{revblock}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Task (metric)} & \textbf{Model} & \textbf{Clean} & \textbf{Worst case} \\
+\midrule
+\ac{fl} (\ac{mae} [\%], $\downarrow$) & \ac{mlp} & 10.20 & 24.36 \\
+\ac{fl} (\ac{mae} [\%], $\downarrow$) & \ac{gb}  & 14.78 & 20.56 \\
+\midrule
+\ac{fc} (macro-\ac{f1}, $\uparrow$) & \ac{mlp} & 0.991 & 0.959 \\
+\ac{fc} (macro-\ac{f1}, $\uparrow$) & \ac{gb}  & 0.745 & 0.274 \\
+\bottomrule
+\end{tabular}
+\end{revblock}
+\end{table}

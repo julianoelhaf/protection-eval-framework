@@ -1,0 +1,6 @@
+fl_two_ended|y_fault_location|0.020
+fl_two_ended|y_fault_location|0.050
+fl_one_ended|y_fault_location|0.020
+fl_one_ended|y_fault_location|0.050
+fc|event_type|0.020
+fc|event_type|0.050

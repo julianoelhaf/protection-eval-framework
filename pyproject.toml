@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fcl_psp"
+version = "0.1.0"
+description = "A standardized framework and reproducibility harness for machine learning in power system protection (fault classification and localization on the PROTECT-90 benchmark)."
+readme = "README.md"
+authors = [{ name = "Julian Oelhaf", email = "julian.oelhaf@fau.de" }]
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.9"
+dependencies = [
+    "hydra-core",
+    "numpy",
+    "pandas",
+    # Pinned: the paper reports scikit-learn 1.8.0; the reference FC/FL numbers and
+    # the cross-paper consistency story (see agent/ijepes_revision_master_plan.md
+    # §1.6) depend on this exact version. Do not float it.
+    "scikit-learn==1.8.0",
+    "matplotlib",
+    "wandb",
+    "mlflow",
+    "tabulate",
+    # Companion package providing the config schema, constants, and windowed-data
+    # loaders (incl. the Eq. 5 onset validity). Not on PyPI; installed from the
+    # companion repository (access required). See README "Requirements".
+    # Pinned to an immutable commit for reproducibility (the version the released
+    # pipeline runs against). Replace with a release
+    # tag on `main` once one is cut.
+    "psp_helper @ git+https://github.com/julianoelhaf/power-grid-and-ai-helper-functions.git@2c78db4",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "flake8", "black", "isort"]
+
+[project.urls]
+Repository = "https://github.com/julianoelhaf/protection-eval-framework"
+Dataset = "https://doi.org/10.5281/zenodo.18418330"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = "black"
+line_length = 99
+src_paths = ["src", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

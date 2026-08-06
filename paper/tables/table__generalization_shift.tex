@@ -1,0 +1,17 @@
+\begin{table}[pos=ht]
+\caption{Directional fault-resistance holdout at 20\,ms. Models are trained on the lower 80\% and tested on the upper quintile of $R_f$, or vice versa. \ac{fc}: macro-\ac{f1}; \ac{fl}: \ac{mae} [\% line length]. The episode-grouped five-fold result is shown for context and is not a training-size-matched control. Shifted \ac{mlp} columns are mean\,$\pm$\,standard deviation across five explicitly varied model seeds (0--4); the histogram-based \ac{gb} columns report one run with seed 42.}
+\label{tab:generalization_shift}
+\small
+\centering
+\begin{tabular}{llccc}
+\toprule
+\textbf{Task} & \textbf{Model} & \textbf{Five-fold reference} & \textbf{High-$R_f$ test} & \textbf{Low-$R_f$ test} \\
+\midrule
+\ac{fc} (macro-\ac{f1}) & \ac{mlp} & 0.991 & $0.975\pm0.004$ & $0.979\pm0.007$ \\
+\ac{fc} (macro-\ac{f1}) & \ac{gb} & 0.745 & 0.731 & 0.725 \\
+\midrule
+\ac{fl} (\ac{mae} [\%]) & \ac{mlp} & 10.20 & $10.33\pm0.22$ & $12.34\pm0.63$ \\
+\ac{fl} (\ac{mae} [\%]) & \ac{gb} & 14.78 & 16.79 & 14.30 \\
+\bottomrule
+\end{tabular}
+\end{table}

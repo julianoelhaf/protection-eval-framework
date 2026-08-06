@@ -1,0 +1,8 @@
+[moment_fc_W20_probe] event_type moment W=0.020 mode=probe macroF1 mean=0.9531 std=0.0046 per_fold=[0.9543, 0.9578, 0.9508, 0.9453, 0.9572] device=cuda
+[moment_fc_W20_head] event_type moment W=0.020 mode=head macroF1 mean=0.9845 std=0.0022 per_fold=[0.985, 0.9857, 0.9862, 0.9855, 0.9801] device=cuda
+[moment_fc_W50_probe] event_type moment W=0.050 mode=probe macroF1 mean=0.9754 std=0.0015 per_fold=[0.975, 0.9761, 0.9732, 0.9748, 0.9777] device=cuda
+[moment_fc_W50_head] event_type moment W=0.050 mode=head macroF1 mean=0.9893 std=0.0009 per_fold=[0.9882, 0.99, 0.9881, 0.9903, 0.9898] device=cuda
+[moment_fl_W20_probe] y_fault_location moment W=0.020 mode=probe MAE mean=14.8163 std=0.0981 per_fold=[14.8626, 14.9342, 14.8414, 14.8036, 14.6396] device=cuda
+[moment_fl_W20_head] y_fault_location moment W=0.020 mode=head MAE mean=10.5937 std=0.2163 per_fold=[10.5735, 10.8944, 10.4135, 10.7732, 10.3138] device=cuda
+[moment_fl_W50_probe] y_fault_location moment W=0.050 mode=probe MAE mean=14.9869 std=0.0873 per_fold=[14.9311, 15.0464, 15.0521, 15.0638, 14.8411] device=cuda
+[moment_fl_W50_head] y_fault_location moment W=0.050 mode=head MAE mean=8.9015 std=0.1189 per_fold=[8.8941, 9.0164, 8.85, 9.0367, 8.7104] device=cuda

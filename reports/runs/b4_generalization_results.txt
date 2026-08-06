@@ -1,0 +1,8 @@
+[b4_fc_mlp_hi] event_type mlp_classifier W=0.020 shift=high thr=7.968 n_train=209293 n_test=52345 macroF1=0.9705 (760s)
+[b4_fc_gb_hi] event_type hist_gradient_boosting_classifier W=0.020 shift=high thr=7.968 n_train=209293 n_test=52345 macroF1=0.7306 (257s)
+[b4_fc_gb_lo] event_type hist_gradient_boosting_classifier W=0.020 shift=low thr=2.115 n_train=209293 n_test=52345 macroF1=0.7253 (211s)
+[b4_fc_mlp_lo] event_type mlp_classifier W=0.020 shift=low thr=2.115 n_train=209293 n_test=52345 macroF1=0.9858 (888s)
+[b4_fl_mlp_lo] y_fault_location mlp_regressor W=0.020 shift=low thr=2.115 n_train=21651 n_test=5415 MAE=11.8400 (377s)
+[b4_fl_gb_hi] y_fault_location hist_gradient_boosting_regressor W=0.020 shift=high thr=7.968 n_train=21651 n_test=5415 MAE=16.7931 (43s)
+[b4_fl_gb_lo] y_fault_location hist_gradient_boosting_regressor W=0.020 shift=low thr=2.115 n_train=21651 n_test=5415 MAE=14.2982 (42s)
+[b4_fl_mlp_hi] y_fault_location mlp_regressor W=0.020 shift=high thr=7.968 n_train=21651 n_test=5415 MAE=10.1969 (855s)

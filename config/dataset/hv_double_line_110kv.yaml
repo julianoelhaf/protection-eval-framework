@@ -1,0 +1,46 @@
+# === General metadata ===
+topology: "hv_double_line_110kv" # "test_hv_double_line_110kv", "hv_double_line_110kv"
+data_directory: "data"
+dataset_directory: "data" # dataset root; override for your environment
+tmp_data_directory: ""
+windows_local_dir: "windows_tmp"
+data_samples_foldername: "data"
+labels_filename: "settings.csv"
+index_col: ""
+
+# === Sampling & timing ===
+sampling_frequency: 9_600 # Hz
+frequency: 50 # system frequency (Hz)
+duration: 0.49989583 # seconds
+multiple_of: 6
+additional: 1
+samples: 1100
+expected_start_time: 0.0 # seconds before event; PowerFactory default: -0.1s
+
+# === Timestamp (time) column ===
+time_top_label: "PodesResult" # top-level header for time
+expected_name: "b:tnow in s" # sub-header name for time
+event_start_column: "events/event_start"
+
+# === Feeder & subcolumn structure ===
+feeder_regex: ^(?:PodesResult|Cub_(?P<cub>[^\\]+)\\pex_MainBus(?P<mainbus>\d+)_(?P<element>[^,]+))$
+sub_regex: ^(?:b:tnow in s|c:(?:(?P<quantity>Isec|Usec):(?P<phase>[ABC]) in (?P<unit>A|V)))$
+
+# === CSV / file parsing ===
+seperator: ","
+decimal: "."
+encoding: "utf-8"
+file_ending: ".csv"
+
+# === Allowed values ===
+units_allowed: ["V", "A"]
+quantity_map:
+  Usec: "Usec"
+  Isec: "Isec"
+phase_map:
+  A: "L1"
+  B: "L2"
+  C: "L3"
+
+
+feeder_types: ["Cable", "OHL"] # TODO: update according to topology

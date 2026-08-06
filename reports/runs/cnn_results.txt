@@ -1,0 +1,4 @@
+[cnn_fl_W50] y_fault_location cnn1d W=0.050 MAE mean=9.0873 std=0.2818 per_fold=[8.7698, 9.5481, 9.2464, 8.8562, 9.0157] device=cuda (799s)
+[cnn_fl_W20] y_fault_location cnn1d W=0.020 MAE mean=9.6495 std=0.6710 per_fold=[8.8421, 9.1719, 10.6743, 10.1583, 9.401] device=cuda (2305s)
+[cnn_fc_W50] event_type cnn1d W=0.050 macroF1 mean=0.9994 std=0.0006 per_fold=[0.9997, 0.9989, 0.9985, 1.0, 1.0] device=cuda (2512s)
+[cnn_fc_W20] event_type cnn1d W=0.020 macroF1 mean=0.9991 std=0.0005 per_fold=[0.999, 0.9994, 0.9982, 0.9996, 0.9991] device=cuda (11559s)

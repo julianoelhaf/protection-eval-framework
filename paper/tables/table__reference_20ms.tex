@@ -1,0 +1,14 @@
+\begin{table}[ht]
+\caption{Reference performance across representative case-study models for the fixed 20\,ms timing configuration. \ac{fc} is reported by macro-\ac{f1}; \ac{fl} by \ac{mae} in percent of normalized line length. Values are mean $\pm$ std over 5 folds.}
+\small
+\label{tab:reference_20ms}
+\centering
+\begin{tabular}{llcccc}
+\toprule
+\bfseries Task & \bfseries Metric & \bfseries \acs{mlp} & \bfseries \ac{gb} & \bfseries \ac{knn} & \bfseries Ridge \\
+\midrule
+\ac{fc} & Macro-\ac{f1} $\uparrow$ & \textbf{0.991 $\pm$ 0.001} & 0.745 $\pm$ 0.017 & 0.799 $\pm$ 0.006 & 0.095 $\pm$ 0.003 \\
+\ac{fl} & \ac{mae} [\%] $\downarrow$ & \textbf{10.20 $\pm$ 0.25} & 14.78 $\pm$ 0.25 & 20.10 $\pm$ 0.16 & 26.12 $\pm$ 0.36 \\
+\bottomrule
+\end{tabular}
+\end{table}

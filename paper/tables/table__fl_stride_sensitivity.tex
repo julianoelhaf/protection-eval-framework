@@ -1,0 +1,19 @@
+\begin{table}[pos=ht]
+\caption{Compact stride sensitivity for fault localization. Baseline performance is reported at the default 5\,ms stride; additional columns show $\Delta$\ac{mae} relative to that baseline for larger strides. Negative values indicate improvement.}
+\small
+\label{tab:fl_stride_sensitivity}
+\centering
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Model} & \textbf{Window} & \textbf{Baseline \acs{mae}} & \textbf{$\Delta$ @ 10\,ms} & \textbf{$\Delta$ @ 20\,ms} & \textbf{$\Delta$ @ 50\,ms} \\
+\midrule
+\ac{mlp} & 10\,ms & 10.64 & +0.00 & -- & -- \\
+\ac{mlp} & 20\,ms & 10.20 & +0.93 & +0.13 & -- \\
+\ac{mlp} & 50\,ms & 9.92 & +1.10 & +1.24 & +1.44 \\
+\midrule
+\ac{gb} & 10\,ms & 14.65 & +0.00 & -- & -- \\
+\ac{gb} & 20\,ms & 14.78 & +0.28 & -0.36 & -- \\
+\ac{gb} & 50\,ms & 14.66 & +0.49 & +0.65 & -0.20 \\
+\bottomrule
+\end{tabular}
+\end{table}

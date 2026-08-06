@@ -1,0 +1,14 @@
+\begin{table}[pos=t]
+\caption{Main-text learned-baseline comparison under the shared episode-grouped five-fold protocol. \Ac{fc} is evaluated using macro-\ac{f1} ($\uparrow$), and \ac{fl} using \ac{mae} in percent of line length ($\downarrow$). Values are mean $\pm$ standard deviation across the five held-out folds; the best mean in each column is shown in bold. The pre-trained MOMENT-1-large results are reported separately in Appendix~\ref{app:transformer} (Table~\ref{tab:transformer_appendix}).}
+\label{tab:transformer_summary}
+\small
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{\ac{fc} 20\,ms} & \textbf{\ac{fc} 50\,ms} & \textbf{\ac{fl} 20\,ms} & \textbf{\ac{fl} 50\,ms} \\
+\midrule
+\ac{mlp} (reference)       & 0.991 $\pm$ 0.001 & 0.990 $\pm$ 0.005 & 10.20 $\pm$ 0.25 & \phantom{0}9.92 $\pm$ 0.27 \\
+\ac{cnn1d} (from scratch)  & \textbf{0.999 $\pm$ 0.001} & \textbf{0.999 $\pm$ 0.001} & \textbf{\phantom{0}9.65 $\pm$ 0.67} & \textbf{\phantom{0}9.09 $\pm$ 0.28} \\
+\bottomrule
+\end{tabular}
+\end{table}
