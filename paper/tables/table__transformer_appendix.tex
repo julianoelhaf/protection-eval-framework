@@ -1,0 +1,16 @@
+\begin{table}[pos=ht]
+\caption{Pre-trained foundation-model (MOMENT-1-large) baseline under the shared episode-grouped five-fold protocol, with the main-text \ac{mlp} and \ac{cnn1d} repeated for reference. \ac{fc}: macro-\ac{f1} ($\uparrow$); \ac{fl}: \ac{mae} [\% line length] ($\downarrow$). Mean $\pm$ standard deviation over 5 folds; best mean per column in bold.}
+\label{tab:transformer_appendix}
+\small
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{\ac{fc} 20\,ms} & \textbf{\ac{fc} 50\,ms} & \textbf{\ac{fl} 20\,ms} & \textbf{\ac{fl} 50\,ms} \\
+\midrule
+\ac{mlp} (reference)     & 0.991 $\pm$ 0.001 & 0.990 $\pm$ 0.005 & 10.20 $\pm$ 0.25 & \phantom{0}9.92 $\pm$ 0.27 \\
+\ac{cnn1d} (from scratch) & \textbf{0.999 $\pm$ 0.001} & \textbf{0.999 $\pm$ 0.001} & \phantom{0}\textbf{9.65 $\pm$ 0.67} & \phantom{0}9.09 $\pm$ 0.28 \\
+MOMENT -- linear probe   & 0.953 $\pm$ 0.005 & 0.975 $\pm$ 0.002 & 14.82 $\pm$ 0.10 & 14.99 $\pm$ 0.09 \\
+MOMENT -- \ac{mlp} head  & 0.985 $\pm$ 0.002 & 0.989 $\pm$ 0.001 & 10.59 $\pm$ 0.22 & \phantom{0}\textbf{8.90 $\pm$ 0.12} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,4 @@
+moment_fc_W20|event_type|0.020
+moment_fc_W50|event_type|0.050
+moment_fl_W20|y_fault_location|0.020
+moment_fl_W50|y_fault_location|0.050

@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{Compact runtime summary for fault classification under the reference assumptions. Macro-\ac{f1} is shown for context. Runtimes are measured on a 32-core SLURM node (lme222, OMP=32) and are machine-specific relative indicators, not end-to-end relay latencies.}
+\label{tab:fc_runtime_compact}
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Window} & \textbf{F1} & \textbf{Train [s]} & \textbf{Infer. [$\mu$s]} & \textbf{Thr. [k/s]} \\
+\midrule
+\ac{mlp} & 20\,ms & \textbf{0.991} & 603.7 & \textbf{7.32} & 136.7 \\
+\ac{gb} & 20\,ms & 0.745 & 132.6 & 24.47 & 41.1 \\
+\midrule
+\ac{mlp} & 50\,ms & \textbf{0.990} & 1289.5 & \textbf{16.37} & 61.1 \\
+\ac{gb} & 50\,ms & 0.982 & 1968.8 & 82.91 & 12.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

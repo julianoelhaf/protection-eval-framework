@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Relay-level \ac{fl} error for the 50\,ms \ac{mlp} regressor under reduced observability. The improvement is computed relative to the better of the two single-terminal settings for each line.}
+\label{tab:fl_observability_detail_mlp_50ms}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Line} &
+\multicolumn{2}{c}{\textbf{Single-terminal MAE [\%]}} &
+\textbf{Two-terminal} &
+\textbf{Improvement} \\
+\cmidrule(lr){2-3}
+& \textbf{Terminal 1} & \textbf{Terminal 2} & \textbf{MAE [\%]} & \textbf{[\% points]} \\
+\midrule
+01--02A & 21.948 & 20.055 & 17.229 & 2.826 \\
+01--02B & 22.316 & 22.712 & 20.814 & 1.502 \\
+02--03A & 20.510 & 23.202 & 18.797 & 1.712 \\
+02--03B & 22.997 & 23.620 & 21.630 & 1.367 \\
+\bottomrule
+\end{tabular}
+\end{table}

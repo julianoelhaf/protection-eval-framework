@@ -1,0 +1,89 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper (see preferred-citation) and the PROTECT-90 dataset (see references)."
+title: "A Standardized Framework for Machine Learning in Power System Protection"
+type: software
+authors:
+  - family-names: "Oelhaf"
+    given-names: "Julian"
+    email: "julian.oelhaf@fau.de"
+    affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  - family-names: "Kordowich"
+    given-names: "Georg"
+    affiliation: "Institute of Electrical Energy Systems, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  - family-names: "Pérez-Toro"
+    given-names: "Paula Andrea"
+    affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  - family-names: "Bergler"
+    given-names: "Christian"
+    affiliation: "Department of Electrical Engineering, Media and Computer Science, Ostbayerische Technische Hochschule Amberg-Weiden"
+  - family-names: "Jäger"
+    given-names: "Johann"
+    affiliation: "Institute of Electrical Energy Systems, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  - family-names: "Maier"
+    given-names: "Andreas"
+    affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  - family-names: "Bayer"
+    given-names: "Siming"
+    affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+year: 2026
+license: MIT
+repository-code: "https://github.com/julianoelhaf/protection-eval-framework"
+preferred-citation:
+  type: article
+  title: "A Standardized Framework for Machine Learning in Power System Protection"
+  authors:
+    - family-names: "Oelhaf"
+      given-names: "Julian"
+      affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+    - family-names: "Kordowich"
+      given-names: "Georg"
+      affiliation: "Institute of Electrical Energy Systems, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+    - family-names: "Pérez-Toro"
+      given-names: "Paula Andrea"
+      affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+    - family-names: "Bergler"
+      given-names: "Christian"
+      affiliation: "Department of Electrical Engineering, Media and Computer Science, Ostbayerische Technische Hochschule Amberg-Weiden"
+    - family-names: "Jäger"
+      given-names: "Johann"
+      affiliation: "Institute of Electrical Energy Systems, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+    - family-names: "Maier"
+      given-names: "Andreas"
+      affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+    - family-names: "Bayer"
+      given-names: "Siming"
+      affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
+  journal: "International Journal of Electrical Power & Energy Systems"
+  publisher:
+    name: "Elsevier"
+  volume: "181"
+  doi: "10.1016/j.ijepes.2026.112169"
+  identifiers:
+    - type: other
+      value: "112169"
+      description: Article number
+  year: 2026
+  notes: "Published August 2026."
+references:
+  - type: dataset
+    title: "PROTECT-90: A Fault Dataset for Power System Protection"
+    authors:
+      - family-names: "Kordowich"
+        given-names: "Georg"
+      - family-names: "Oelhaf"
+        given-names: "Julian"
+      - family-names: "Bergler"
+        given-names: "Christian"
+      - family-names: "Maier"
+        given-names: "Andreas"
+      - family-names: "Bayer"
+        given-names: "Siming"
+      - family-names: "Jäger"
+        given-names: "Johann"
+    year: 2026
+    version: "1.0.0"
+    publisher:
+      name: "Zenodo"
+    doi: "10.5281/zenodo.21109169"
+    url: "https://doi.org/10.5281/zenodo.21109169"
+    notes: "Concept DOI (all versions): 10.5281/zenodo.18418329. A dedicated dataset paper has been accepted and will be cited here once published."

@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{Controlled timing sensitivity for fault classification. Macro-\ac{f1} across decision horizons for the representative case-study models. Mean $\pm$ std over 5 folds; higher is better. The 20\,ms row corresponds to the fixed reference timing configuration.}
+\small
+\label{tab:fc_timing_sensitivity}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\bfseries Window & \bfseries \ac{mlp} & \bfseries \ac{gb} & \bfseries \ac{knn} & \bfseries \ac{ridge} \\
+\midrule
+10 ms & \textbf{0.985 $\pm$ 0.011} & 0.418 $\pm$ 0.009 & 0.738 $\pm$ 0.012 & 0.097 $\pm$ 0.002 \\
+20 ms (ref.) & \textbf{0.991 $\pm$ 0.001} & 0.745 $\pm$ 0.017 & 0.799 $\pm$ 0.006 & 0.095 $\pm$ 0.003 \\
+30 ms & \textbf{0.988 $\pm$ 0.005} & 0.977 $\pm$ 0.001 & 0.831 $\pm$ 0.004 & 0.093 $\pm$ 0.002 \\
+40 ms & \textbf{0.988 $\pm$ 0.007} & 0.982 $\pm$ 0.002 & 0.851 $\pm$ 0.003 & 0.091 $\pm$ 0.002 \\
+50 ms & \textbf{0.990 $\pm$ 0.005} & 0.982 $\pm$ 0.001 & 0.863 $\pm$ 0.003 & 0.089 $\pm$ 0.002 \\
+\bottomrule
+\end{tabular}
+\end{table}

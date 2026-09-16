@@ -1,0 +1,61 @@
+{
+  "task": "fc",
+  "observability": "relay_pair",
+  "window_ms": 50,
+  "n_splits": 5,
+  "samples_per_cycle": 128,
+  "L": 320,
+  "timestamp": "2026-07-10T22:09:08.383031+00:00",
+  "baseline_cfg": {
+    "task": "fc",
+    "observability": "relay_pair",
+    "labels_csv_path": "/path/to/datasets/PROTECT-90/hv_double_line_90kv_labels.csv",
+    "samples_per_cycle": 128,
+    "cycle": "last",
+    "scaling": "peak",
+    "fc": {
+      "pickup_grid": [
+        1.2,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "ground_grid": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    "fl": {
+      "current_sign": 1,
+      "min_current_ratio": 0.01,
+      "neglect_mutual": true,
+      "terminal": "S"
+    },
+    "out_dir": "reports/baselines"
+  },
+  "metric": "macro_f1",
+  "f1_macro": {
+    "mean": 0.6842828072463703,
+    "std": 0.0013618949607407027,
+    "per_fold": [
+      0.6847893412872993,
+      0.6831603771954856,
+      0.6822878905591321,
+      0.68515838839342,
+      0.6860180387965144
+    ]
+  },
+  "f1_macro_fault_only": {
+    "mean": 0.8378956166564674,
+    "std": 0.002538095002811041,
+    "per_fold": [
+      0.8392964000005629,
+      0.8383697351317516,
+      0.8330076754203491,
+      0.8385100948524579,
+      0.8402941778772157
+    ]
+  }
+}

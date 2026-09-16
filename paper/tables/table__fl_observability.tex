@@ -1,0 +1,15 @@
+\begin{table*}[pos=t]
+\caption{Controlled observability sensitivity for fault localization. \ac{mae} in percent of normalized line length under full, relay-pair, and single-relay sensing for \ac{mlp} and histogram-based \ac{gb} models at 20\,ms and 50\,ms. Full-observability values are the mean $\pm$ standard deviation over the five episode-grouped folds; the relay-pair and single-relay values are the mean over the four same-line relay pairs and the eight individual relays, respectively, with the min--max range across those configurations in brackets. Lower is better.}
+\small
+\label{tab:fl_observability}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\bfseries Observability & \bfseries \ac{mlp} (20\,ms) & \bfseries \ac{gb} (20\,ms) & \bfseries \ac{mlp} (50\,ms) & \bfseries \ac{gb} (50\,ms) \\
+\midrule
+Full         & \textbf{10.20 $\pm$ 0.25} & \textbf{14.78 $\pm$ 0.25} & \textbf{9.92 $\pm$ 0.27} & \textbf{14.66 $\pm$ 0.20} \\
+Relay pair   & 19.65 (17.40--21.67) & 21.43 (20.30--22.42) & 19.62 (17.23--21.63) & 21.37 (20.12--22.38) \\
+Single relay & 22.22 (20.17--23.69) & 23.20 (22.46--23.94) & 22.17 (20.05--23.62) & 23.07 (22.19--23.77) \\
+\bottomrule
+\end{tabular}
+\end{table*}

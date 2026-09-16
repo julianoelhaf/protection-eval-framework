@@ -1,0 +1,4 @@
+use_wandb: True
+mode: online # disabled | offline | online
+project: fc-fl-comparison
+entity: null # set to your W&B entity (team/user), or leave null for the account default

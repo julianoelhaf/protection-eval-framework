@@ -1,0 +1,25 @@
+# Experiment A — conventional protection baselines (IJEPES revision).
+# Read defensively by run_conventional_baselines.py (merged with a BaselineConfig
+# dataclass + any `+baseline.*` CLI overrides); NOT part of the MainConfig schema.
+task: fl_two_ended            # fc | fl_two_ended | fl_one_ended
+observability: relay_pair     # informational tag for Table A2 (full | relay_pair | single_relay)
+labels_csv_path: /path/to/datasets/PROTECT-90/hv_double_line_90kv_labels.csv
+
+# Shared phasor front end
+samples_per_cycle: 128        # fs 6400 / grid 50 Hz = one cycle
+cycle: last
+scaling: peak
+
+# Fault classification (phase selector) — thresholds fit on TRAIN folds only
+fc:
+  pickup_grid: [1.2, 1.5, 2.0, 3.0]      # tau_p search (current-rise ratio over pre-fault)
+  ground_grid: [0.05, 0.10, 0.15, 0.20]  # tau_g search (|3 I0| / |I1|)
+
+# Fault localization (impedance-based)
+fl:
+  current_sign: 1             # into-line convention (calibrated once for the dataset)
+  min_current_ratio: 0.01
+  neglect_mutual: true        # single-ended SLG: Z0m ~ 0 (parallel circuits far apart)
+  terminal: S                 # one-ended reference terminal (S = lower-index bus)
+
+out_dir: reports/baselines

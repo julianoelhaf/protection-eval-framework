@@ -1,0 +1,17 @@
+\begin{table}[pos=ht]
+\caption{Compact hyperparameter robustness summary for the representative \ac{mlp} and histogram-based \ac{gb} models based on the single-parameter ablations reported in this appendix. Ablation default refers to the best tagged default result within the independent ablation campaign across the reported decision horizons. Best denotes the strongest result observed in the corresponding ablation setting. For \ac{fc}, $\Delta_{\text{best}}$ denotes the increase in macro-\ac{f1}; for \ac{fl}, it denotes the reduction in \ac{mae}. Positive values therefore indicate improvement in both tasks.}
+\small
+\label{tab:ablation_robustness_summary_main}
+\centering
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Model} & \textbf{Task} & \textbf{Ablation default} & \textbf{Best} & \textbf{$\Delta_{\text{best}}$} & \textbf{Max. spread} \\
+\midrule
+\ac{mlp} & \ac{fc} & 0.991 & 0.996 & +0.005 & 0.015 \\
+\ac{gb} & \ac{fc} & 0.982 & 0.988 & +0.006 & 0.327 \\
+\midrule
+\ac{mlp} & \ac{fl} & 9.955 & 8.296 & +1.659 & 6.209 \\
+\ac{gb} & \ac{fl} & 14.662 & 12.942 & +1.720 & 5.671 \\
+\bottomrule
+\end{tabular}
+\end{table}

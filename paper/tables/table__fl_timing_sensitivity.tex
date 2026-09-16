@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{Timing sensitivity for \ac{fl}. \ac{mae} is reported as percent of normalized line length across decision horizons. Values are mean $\pm$ std over 5 folds; lower is better. The 20\,ms setting is the reference configuration.}
+\small
+\label{tab:fl_timing_sensitivity}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\bfseries Window & \bfseries \ac{mlp} & \bfseries \ac{gb} & \bfseries \ac{knn} & \bfseries \ac{ridge} \\
+\midrule
+10 ms & \textbf{10.64 $\pm$ 0.36} & 14.65 $\pm$ 0.19 & 20.38 $\pm$ 0.32 & 26.14 $\pm$ 0.32 \\
+20 ms (ref.) & \textbf{10.20 $\pm$ 0.25} & 14.78 $\pm$ 0.25 & 20.10 $\pm$ 0.16 & 26.12 $\pm$ 0.36 \\
+30 ms & \textbf{10.18 $\pm$ 0.35} & 14.64 $\pm$ 0.18 & 19.65 $\pm$ 0.19 & 26.11 $\pm$ 0.35 \\
+40 ms & \textbf{10.46 $\pm$ 0.52} & 14.59 $\pm$ 0.19 & 19.33 $\pm$ 0.16 & 26.12 $\pm$ 0.32 \\
+50 ms & \textbf{9.92 $\pm$ 0.27} & 14.66 $\pm$ 0.20 & 19.12 $\pm$ 0.14 & 26.13 $\pm$ 0.31 \\
+\bottomrule
+\end{tabular}
+\end{table}

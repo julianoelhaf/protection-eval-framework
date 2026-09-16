@@ -1,0 +1,29 @@
+tim_mlp_W30|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.030
+tim_gb_W30|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.030
+tim_mlp_W40|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.040
+tim_gb_W40|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.040
+abl_mlp_hid50|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.hidden_layer_sizes=[50]
+abl_mlp_hid100_50|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.hidden_layer_sizes=[100,50]
+abl_mlp_hid256_128|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.hidden_layer_sizes=[256,128]
+abl_mlp_alpha1e5|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.alpha=1e-05
+abl_mlp_alpha1e3|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.alpha=1e-03
+abl_mlp_ilr1e5|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.learning_rate_init=1e-05
+abl_mlp_ilr1e4|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.learning_rate_init=1e-04
+abl_mlp_ilr1e2|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.learning_rate_init=1e-02
+abl_mlp_bs64|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.batch_size=64
+abl_mlp_bs128|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.batch_size=128
+abl_mlp_bs256|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.batch_size=256
+abl_mlp_it100|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.max_iter=100
+abl_mlp_it300|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.max_iter=300
+abl_mlp_it400|training.target_label=event_type model.model_name=mlp_classifier window_extraction.window_length=0.020 model.mlp.max_iter=400
+abl_gb_lr003|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.learning_rate=0.03
+abl_gb_lr02|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.learning_rate=0.2
+abl_gb_d3|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.max_depth=3
+abl_gb_d5|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.max_depth=5
+abl_gb_d10|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.max_depth=10
+abl_gb_it50|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.max_iter=50
+abl_gb_it300|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.max_iter=300
+abl_gb_ml5|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.min_samples_leaf=5
+abl_gb_ml50|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.min_samples_leaf=50
+abl_gb_l2_1e4|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.l2_regularization=1e-04
+abl_gb_l2_1e2|training.target_label=event_type model.model_name=hist_gradient_boosting_classifier window_extraction.window_length=0.020 model.hgb.l2_regularization=1e-02

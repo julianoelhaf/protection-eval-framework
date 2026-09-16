@@ -1,0 +1,8 @@
+=== y_fault_location ridge_regressor W=0.020: MAE mean=26.1197 std=0.3576 per_fold=[26.3352, 26.4747, 26.4121, 25.6202, 25.7564] (300s)
+=== y_fault_location k_neighbors_regressor W=0.020: MAE mean=20.1045 std=0.1649 per_fold=[19.8716, 20.3478, 20.1063, 20.2043, 19.9924] (44s)
+=== y_fault_location hist_gradient_boosting_regressor W=0.020: MAE mean=14.7820 std=0.2524 per_fold=[14.6598, 15.1898, 14.5122, 14.9533, 14.5947] (154s)
+=== y_fault_location mlp_regressor W=0.020: MAE mean=10.2025 std=0.2461 per_fold=[10.0079, 10.3997, 9.8462, 10.2441, 10.5148] (1479s)
+=== y_fault_location ridge_regressor W=0.050: MAE mean=26.1327 std=0.3122 per_fold=[26.2454, 26.5051, 26.373, 25.6826, 25.8576] (7212s)
+=== y_fault_location k_neighbors_regressor W=0.050: MAE mean=19.1208 std=0.1381 per_fold=[18.9794, 19.3701, 19.073, 19.1581, 19.0233] (556s)
+=== y_fault_location hist_gradient_boosting_regressor W=0.050: MAE mean=14.6625 std=0.2039 per_fold=[14.5969, 15.0019, 14.4814, 14.7763, 14.4562] (895s)
+=== y_fault_location mlp_regressor W=0.050: MAE mean=9.9182 std=0.2710 per_fold=[10.311, 9.5165, 9.7465, 10.0623, 9.9547] (13217s)

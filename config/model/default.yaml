@@ -1,0 +1,58 @@
+# ===========================
+# Model Selection
+# ===========================
+model_name: mlp_classifier
+# Available models for ablation studies:
+# - mlp_classifier
+# - mlp_regressor
+# - hist_gradient_boosting_classifier
+# - hist_gradient_boosting_regressor
+
+# Other models with default parameters (not for ablation studies):
+# - random_forest_*
+# - extra_trees_*
+# - decision_tree_*
+# - ada_boost_*
+# - bagging_*
+# - k_neighbors_*
+# - linear_svc
+# - logistic_regression
+# - ridge_*
+# - sgd_*
+# - svc
+
+# ===========================
+# Common Model Parameters
+# ===========================
+n_jobs: -1
+n_estimators: 100
+max_depth: 10
+
+# ===========================
+# Common Paths
+# ===========================
+model_directory: models
+models_out_path: models
+
+# ===========================
+# MLP Parameters
+# ===========================
+mlp:
+  hidden_layer_sizes: [100]
+  activation: relu
+  alpha: 1e-4
+  learning_rate_init: 0.001
+  batch_size: auto
+  max_iter: 200
+  early_stopping: false
+  n_iter_no_change: 10
+
+# ===========================
+# HistGradientBoosting Parameters
+# ===========================
+hgb:
+  max_depth: null
+  max_iter: 100
+  learning_rate: 0.1
+  min_samples_leaf: 20
+  l2_regularization: 0

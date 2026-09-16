@@ -1,0 +1,15 @@
+{
+  "task": "fl_one_ended",
+  "baseline": "fl_one_ended",
+  "window_ms": 20,
+  "seed_global": 12345,
+  "n_realizations": 5,
+  "axes": [
+    "noise",
+    "ct_saturation",
+    "jitter"
+  ],
+  "n_splits": 5,
+  "timestamp": "2026-07-13T21:33:14.414013+00:00",
+  "note": "conventional protection baselines under measurement-fidelity degradation"
+}

@@ -1,0 +1,23 @@
+\begin{table}[ht]
+\caption{\rev{\ac{fl} performance of learning and conventional impedance-based methods under shared splits, validity rules, and metrics. \ac{mae} [\% line length], mean $\pm$ standard deviation over five folds. Conventional locators additionally use per-episode line parameters and ground-truth loop selection; results are reported per window and per episode using the settled onset window.}}
+\label{tab:baselines_fl}
+\small
+\centering
+\begin{revblock}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Method} & \textbf{Observability} & \textbf{20\,ms} & \textbf{50\,ms} \\
+\midrule
+\ac{mlp}        & full        & $10.20\pm0.25$ & $\phantom{0}9.92\pm0.27$ \\
+\ac{gb}        & full        & $14.78\pm0.25$ & $14.66\pm0.20$ \\
+\ac{knn}        & full        & $20.10\pm0.16$ & $19.12\pm0.14$ \\
+Ridge        & full        & $26.12\pm0.36$ & $26.13\pm0.31$ \\
+\midrule
+Two-ended (per window) & relay pair   & $\phantom{0}5.42\pm0.09$ & $\phantom{0}3.62\pm0.23$ \\
+Two-ended (settled)    & relay pair   & $\phantom{0}\mathbf{2.74\pm0.05}$ & $\phantom{0}\mathbf{1.57\pm0.03}$ \\
+One-ended (per window) & single relay & $156.2\pm4.9$ & $77.1\pm5.6$ \\
+One-ended (settled)    & single relay & $41.9\pm1.2$ & $10.9\pm0.6$ \\
+\bottomrule
+\end{tabular}
+\end{revblock}
+\end{table}

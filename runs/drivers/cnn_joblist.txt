@@ -1,0 +1,4 @@
+cnn_fc_W20|event_type|0.020
+cnn_fc_W50|event_type|0.050
+cnn_fl_W20|y_fault_location|0.020
+cnn_fl_W50|y_fault_location|0.050

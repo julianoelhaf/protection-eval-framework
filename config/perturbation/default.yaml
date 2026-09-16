@@ -1,0 +1,25 @@
+# Experiment B — measurement-fidelity perturbation sweep (IJEPES revision).
+# Loaded outside MainConfig via OmegaConf.structured(PerturbationConfig).
+# Primary protocol: train clean fold models once, evaluate on perturbed TEST folds only.
+enabled: true
+seed_global: 12345
+n_realizations: 5            # R realizations per (fold, level)
+horizons_ms: [20, 50]        # 20 ms primary, 50 ms longer-window check
+axes: [noise, ct_saturation, jitter]
+
+noise:
+  snr_db: [clean, 40, 30, 20, 10]   # "clean" = identity anchor; 4 non-clean levels
+
+ct_saturation:
+  c: [no_sat, 0.7, 0.5, 0.3]        # retained fraction of clean peak (current channels only)
+
+jitter:
+  delta_max_samples: [0, 1, 2, 4]   # {0, 156, 312, 625} us at 6400 Hz
+
+train_noisy:                        # B.5 augmentation (retrains); off by default
+  enabled: false
+  axis: noise
+  level: 20
+  mix: 0.5
+
+out_dir: reports/perturbation

@@ -1,0 +1,15 @@
+{
+  "task": "fc",
+  "baseline": "fc",
+  "window_ms": 50,
+  "seed_global": 12345,
+  "n_realizations": 5,
+  "axes": [
+    "noise",
+    "ct_saturation",
+    "jitter"
+  ],
+  "n_splits": 5,
+  "timestamp": "2026-07-14T00:04:39.292468+00:00",
+  "note": "conventional protection baselines under measurement-fidelity degradation"
+}

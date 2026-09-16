@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\caption{\rev{\ac{fl} performance by observability at 20\,ms for sensing-matched conventional and learning methods. \ac{mae} [\% line length]; lower is better.}}
+\label{tab:baselines_obs}
+\small
+\centering
+\begin{revblock}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Observability} & \textbf{Conventional} & \textbf{Conv.} & \textbf{\ac{mlp}} & \textbf{\ac{gb}} \\
+\midrule
+Full         & (n/a)                & --   & 10.20 & 14.78 \\
+Relay pair   & two-ended synchr.    & \textbf{2.74} & 19.65 & 21.43 \\
+Single relay & one-ended reactance  & 41.9 & 22.22 & 23.20 \\
+\bottomrule
+\end{tabular}
+\end{revblock}
+\end{table}

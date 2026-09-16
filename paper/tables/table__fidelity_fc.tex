@@ -1,0 +1,20 @@
+\begin{table}[pos=ht]
+\caption{\ac{fc} robustness to measurement degradation at 20\,ms. The clean row reproduces the five-fold reference statistic. For each perturbed level, the five realizations are first averaged within each fold; values are then reported as mean $\pm$ standard deviation across the five fold-level means. Higher is better.}
+\label{tab:fidelity_fc}
+\small
+\centering
+\begin{revblock}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Axis} & \textbf{Level} & \textbf{\ac{mlp}} & \textbf{\ac{gb}} \\
+\midrule
+Clean                 & --        & 0.991 $\pm$ 0.001 & 0.745 $\pm$ 0.017 \\
+Noise                 & 20\,dB    & 0.989 $\pm$ 0.003 & 0.592 $\pm$ 0.024 \\
+Noise                 & 10\,dB    & 0.982 $\pm$ 0.011 & \textbf{0.274 $\pm$ 0.028} \\
+\ac{ct} saturation    & $c=0.5$   & 0.982 $\pm$ 0.002 & 0.682 $\pm$ 0.021 \\
+\ac{ct} saturation    & $c=0.3$   & 0.959 $\pm$ 0.003 & 0.534 $\pm$ 0.021 \\
+Jitter                & 4 samples & 0.983 $\pm$ 0.006 & 0.682 $\pm$ 0.034 \\
+\bottomrule
+\end{tabular}
+\end{revblock}
+\end{table}

@@ -1,0 +1,80 @@
+{
+  "task": "fl_one_ended",
+  "observability": "relay_pair",
+  "window_ms": 50,
+  "n_splits": 5,
+  "samples_per_cycle": 128,
+  "L": 320,
+  "timestamp": "2026-07-10T22:08:16.394548+00:00",
+  "baseline_cfg": {
+    "task": "fl_one_ended",
+    "observability": "relay_pair",
+    "labels_csv_path": "/path/to/datasets/PROTECT-90/hv_double_line_90kv_labels.csv",
+    "samples_per_cycle": 128,
+    "cycle": "last",
+    "scaling": "peak",
+    "fc": {
+      "pickup_grid": [
+        1.2,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "ground_grid": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    "fl": {
+      "current_sign": 1,
+      "min_current_ratio": 0.01,
+      "neglect_mutual": true,
+      "terminal": "S"
+    },
+    "out_dir": "reports/baselines"
+  },
+  "metric": "mae_percent_line",
+  "mae": {
+    "mean": 77.09707041577933,
+    "std": 5.5570456281316805,
+    "per_fold": [
+      75.54708324356073,
+      79.04421572924537,
+      86.13751422077196,
+      69.06570578132194,
+      75.69083310399671
+    ]
+  },
+  "mae_settled_per_episode": {
+    "mean": 10.874905618970164,
+    "std": 0.56628740726938,
+    "per_fold": [
+      10.671611277251182,
+      11.731411857099904,
+      10.929829231965341,
+      9.98477300824508,
+      11.056902720289314
+    ]
+  },
+  "coverage": {
+    "mean": 1.0,
+    "std": 0.0,
+    "per_fold": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "diagnostics": {
+    "overall_mae": 77.09711443685464,
+    "pred_min": -21490.145622853983,
+    "pred_max": 37247.26156305736,
+    "pred_mean": 80.17115173508623,
+    "frac_valid": 1.0,
+    "corr_pred_true": 0.08298464961203765
+  }
+}

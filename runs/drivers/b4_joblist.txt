@@ -1,0 +1,8 @@
+b4_fc_mlp_hi|event_type|mlp_classifier|0.020|high
+b4_fc_mlp_lo|event_type|mlp_classifier|0.020|low
+b4_fc_gb_hi|event_type|hist_gradient_boosting_classifier|0.020|high
+b4_fc_gb_lo|event_type|hist_gradient_boosting_classifier|0.020|low
+b4_fl_mlp_hi|y_fault_location|mlp_regressor|0.020|high
+b4_fl_mlp_lo|y_fault_location|mlp_regressor|0.020|low
+b4_fl_gb_hi|y_fault_location|hist_gradient_boosting_regressor|0.020|high
+b4_fl_gb_lo|y_fault_location|hist_gradient_boosting_regressor|0.020|low

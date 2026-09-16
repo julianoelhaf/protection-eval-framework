@@ -1,0 +1,15 @@
+\begin{table*}[pos=t]
+\caption{Controlled observability sensitivity for fault classification. Macro-\ac{f1} under full, relay-pair, and single-relay sensing for \ac{mlp} and histogram-based \ac{gb} models at 20\,ms and 50\,ms. Full-observability values are the mean $\pm$ standard deviation over the five episode-grouped folds; the relay-pair and single-relay values are the mean over the four same-line relay pairs and the eight individual relays, respectively, with the min--max range across those configurations in brackets. Higher is better.}
+\small
+\label{tab:fc_observability}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\bfseries Observability & \bfseries \ac{mlp} (20\,ms) & \bfseries \ac{gb} (20\,ms) & \bfseries \ac{mlp} (50\,ms) & \bfseries \ac{gb} (50\,ms) \\
+\midrule
+Full         & \textbf{0.991 $\pm$ 0.001} & 0.745 $\pm$ 0.017 & \textbf{0.990 $\pm$ 0.005} & \textbf{0.982 $\pm$ 0.001} \\
+Relay pair   & 0.989 (0.988--0.990) & \textbf{0.750} (0.717--0.777) & 0.987 (0.987--0.989) & 0.971 (0.968--0.975) \\
+Single relay & 0.986 (0.975--0.993) & 0.734 (0.629--0.811) & 0.986 (0.966--0.991) & 0.952 (0.900--0.973) \\
+\bottomrule
+\end{tabular}
+\end{table*}

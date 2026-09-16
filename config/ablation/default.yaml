@@ -1,0 +1,6 @@
+enabled: false
+mode: full # full | single_relay | relay_subset | drop_one_relay
+relay_index: 0 # 0..7 when mode=single_relay
+relay_indices: [] # when mode=relay_subset
+n_relays: 8
+features_per_relay: 6
