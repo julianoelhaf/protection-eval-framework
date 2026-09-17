@@ -25,7 +25,8 @@ authors:
   - family-names: "Bayer"
     given-names: "Siming"
     affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
-date-released: "2026-09-16"
+version: "1.0.0"
+date-released: "2026-09-17"
 license: MIT
 repository-code: "https://github.com/julianoelhaf/protection-eval-framework"
 preferred-citation:
