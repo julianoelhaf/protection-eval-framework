@@ -13,7 +13,7 @@ echo "Running on $(hostname) | Job ID: $SLURM_JOB_ID | Start: $(date)"
 echo "TMPDIR: ${TMPDIR:-UNSET!}"
 
 module load python/3.12-conda
-conda activate juoe_ml
+conda activate fcl_psp
 
 # -----------------------------------------
 # Configuration (defaults; allow sbatch --export overrides)

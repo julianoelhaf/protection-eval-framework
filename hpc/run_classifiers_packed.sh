@@ -7,7 +7,7 @@
 #SBATCH --output=./hpc/hpc_logs/%x/%x-%A_%a-on-%N.out
 
 module load python/3.12-conda
-conda activate juoe_ml
+conda activate fcl_psp
 
 TOPOLOGY="hv_double_line_90kv"
 FAULT_TARGET="event_type"
