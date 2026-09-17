@@ -25,7 +25,7 @@ authors:
   - family-names: "Bayer"
     given-names: "Siming"
     affiliation: "Pattern Recognition Lab, Friedrich-Alexander-Universität Erlangen-Nürnberg"
-year: 2026
+date-released: "2026-09-16"
 license: MIT
 repository-code: "https://github.com/julianoelhaf/protection-eval-framework"
 preferred-citation:
@@ -65,7 +65,7 @@ preferred-citation:
   year: 2026
   notes: "Published August 2026."
 references:
-  - type: dataset
+  - type: data
     title: "PROTECT-90: A Fault Dataset for Power System Protection"
     authors:
       - family-names: "Kordowich"
