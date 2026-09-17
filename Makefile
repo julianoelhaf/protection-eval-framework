@@ -3,7 +3,7 @@
 #################################################################################
 
 PROJECT_NAME = fcl_psp
-PYTHON_VERSION = 3.10
+PYTHON_VERSION = 3.12.4
 PYTHON_INTERPRETER = python
 SRC = src
 
